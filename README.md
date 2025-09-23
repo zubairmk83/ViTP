@@ -164,6 +164,8 @@ conda activate vitp-det
 
 - Install the required packages:
 ```
+pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install mmcv-full==1.6.1 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.12.0/index.html
 pip install -r requirements.txt
 ```
 - Insatall flash attention:
@@ -176,14 +178,21 @@ pip install ninja
 python setup.py install
 cd ..
 ```
-- Compile deformable attention:
+- Install mmcv:
 ```
-cd ops & sh make.sh 
-cd ..
+cd ../mmcv
+python setup.py install
+cd mmdet
 ```
 - Install mmrotate:
 ```
 pip install -e .
+```
+- compile deformable attention:
+```
+cd ops
+sh make.sh
+cd ..
 ```
 ### Train
 ```
@@ -192,6 +201,57 @@ sh ./tools/dist_train.sh ViTP_configs/vitp_dotav2_orcnn.py 8
 ### Test
 ```
 sh ./tools/dist_test.sh ./ViTP_configs/vitp_dotav2_orcnn.py ./work_dirs/vitp_dotav2_orcnn/latest.pth 8 --format-only --eval-options submission_dir=./results/vitp_dotav2_orcnn
+```
+
+## Segmentation
+### Installation
+
+- Create a conda environment:
+```
+cd ViTP/mmseg
+conda create -n vitp-seg python==3.10
+conda activate vitp-seg
+```
+
+- Install the required packages:
+```
+pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install mmcv-full==1.6.1 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.12.0/index.html
+pip install -r requirements.txt
+```
+- Install flash attention:
+  
+```
+git clone https://github.com/Dao-AILab/flash-attention.git
+cd flash-attention
+git checkout v0.2.8
+pip install ninja
+python setup.py install
+cd ..
+```
+- Install mmcv:
+```
+cd ../mmcv
+python setup.py install
+cd mmseg
+```
+- Install mmsegmentation:
+```
+pip install -e .
+```
+- compile deformable attention:
+```
+cd ops
+sh make.sh
+cd ..
+```
+### Train
+```
+sh ./tools/dist_train.sh ViTP_configs/vitp_isaid_upernet.py 8 
+```
+### Test
+```
+sh ./tools/dist_test.sh ./ViTP_configs/vitp_isaid_upernet.py ./work_dirs/vitp_isaid_upernet/latest.pth 8 --eval mIoU
 ```
 ---
 ### Citation
