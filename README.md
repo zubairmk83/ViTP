@@ -182,7 +182,7 @@ cd ..
 ```
 cd ../mmcv
 python setup.py install
-cd mmdet
+cd mmrotate
 ```
 - Install mmrotate:
 ```
@@ -252,6 +252,47 @@ sh ./tools/dist_train.sh ViTP_configs/vitp_isaid_upernet.py 8
 ### Test
 ```
 sh ./tools/dist_test.sh ./ViTP_configs/vitp_isaid_upernet.py ./work_dirs/vitp_isaid_upernet/latest.pth 8 --eval mIoU
+```
+## Change Detection
+### Installation
+
+- Create a conda environment:
+```
+cd ViTP/opencd
+conda create -n vitp-cd python==3.10
+conda activate vitp-cd
+```
+
+- Install the required packages:
+```
+pip install torch==1.12.0+cu113 torchvision==0.13.0+cu113 torchaudio==0.12.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install -U openmim
+mim install mmcv==2.0.0
+mim install mmpretrain==1.2.0
+pip install -r requirements.txt
+```
+- Install flash attention:
+  
+```
+git clone https://github.com/Dao-AILab/flash-attention.git
+cd flash-attention
+git checkout v0.2.8
+pip install ninja
+python setup.py install
+cd ..
+```
+
+- Install open-cd:
+```
+pip install -e .
+```
+### Train
+```
+sh ./tools/dist_train.sh ./ViTP_configs/vitp_s2looking_upernet_test.py 8
+```
+### Test
+```
+sh ./tools/dist_test.sh ./ViTP_configs/vitp_s2looking_upernet_test.py 8
 ```
 ---
 ### Citation
