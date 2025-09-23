@@ -4,6 +4,7 @@
 <a href="http://arxiv.org/abs/2509.17562"><img src="https://img.shields.io/badge/arXiv-Paper-b31b1b?logo=Arxiv"></a>
 <a href="https://huggingface.co/GreatBird/ViTP"><img src="https://img.shields.io/badge/HuggingFace-Data-ffd21e?logo=huggingface"></a>
 <a href="https://www.modelscope.cn/datasets/GreatBird/ViTP/files"><img src="https://img.shields.io/badge/ModelScope-Data-624aff"></a>
+<a href="https://zhuanlan.zhihu.com/p/1953867088889348234"><img src="https://img.shields.io/badge/%E8%AE%B2%E8%A7%A3-%E7%9F%A5%E4%B9%8E-blue"></a>
 </p>
 
 <h5 align="center"><em>Yuxuan Li, Yicheng Zhang, Wenhao Tang, Yimian Dai, Ming-Ming Cheng, Xiang Li, and Jian Yang </em></h5>
