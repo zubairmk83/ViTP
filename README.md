@@ -288,11 +288,11 @@ pip install -e .
 ```
 ### Train
 ```
-sh ./tools/dist_train.sh ./ViTP_configs/vitp_s2looking_upernet_test.py 8
+sh ./tools/dist_train.sh ./ViTP_configs/vitp_s2looking_upernet.py 8
 ```
 ### Test
 ```
-sh ./tools/dist_test.sh ./ViTP_configs/vitp_s2looking_upernet_test.py 8
+sh ./tools/dist_test.sh ./ViTP_configs/vitp_s2looking_upernet.py ./work_dirs/vitp_s2looking_upernet/iter_120000.pth 8
 ```
 ---
 ### Citation
