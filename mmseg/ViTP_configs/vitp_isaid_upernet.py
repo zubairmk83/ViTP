@@ -11,7 +11,7 @@ data = dict(
         type='iSAIDDataset',
         data_root='data/iSAID',
         img_dir='img_dir/train',
-        ann_dir='ann_dir_old/train',
+        ann_dir='ann_dir/train',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(type='LoadAnnotations', reduce_zero_label=False),
@@ -36,7 +36,7 @@ data = dict(
         type='iSAIDDataset',
         data_root='data/iSAID',
         img_dir='img_dir/val',
-        ann_dir='ann_dir_old/val',
+        ann_dir='ann_dir/val',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -64,12 +64,13 @@ data = dict(
         type='iSAIDDataset',
         data_root='data/iSAID',
         img_dir='img_dir/val',
-        ann_dir='ann_dir_old/val',
+        ann_dir='ann_dir/val',
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
                 type='MultiScaleFlipAug',
                 img_scale=(896, 896),
+                img_ratios=[0.75, 1.0, 1.5],
                 flip=True,
                 transforms=[
                     dict(type='Resize', keep_ratio=True),
@@ -183,9 +184,9 @@ model = dict(
         loss_decode=dict(
             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
     train_cfg=dict(),
-    test_cfg=dict(mode='whole'))
+    test_cfg=dict(mode='slide',crop_size=(896,896) , stride=(448,448)))
 fp16 = dict(loss_scale=dict(init_scale=512))
 randomness = dict(seed=3407)
-work_dir = './work_dirs/upernet_internvit_adp_80k_isaid_cos_ldr90'
+work_dir = './work_dirs/vitp_isaid_upernet'
 gpu_ids = range(0, 8)
 auto_resume = False
