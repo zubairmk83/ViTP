@@ -260,7 +260,7 @@ If you use this toolbox or benchmark in your research, please cite this project.
 ```bibtex
 @article{Li_2025_ViTP,
   title={Visual Instruction Pretraining for Domain-Specific Foundation Models},
-  author={Li, Yuxuan and Zhang, Yicheng and Tang, Wenhao and Dai, Yimain and Cheng, Ming-Ming and Li, Xiang and Yang, Jian},
+  author={Li, Yuxuan and Zhang, Yicheng and Tang, Wenhao and Dai, Yimian and Cheng, Ming-Ming and Li, Xiang and Yang, Jian},
   journal={arXiv},
   year={2025}
 }
