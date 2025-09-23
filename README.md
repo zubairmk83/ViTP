@@ -6,7 +6,7 @@
 <a href="https://www.modelscope.cn/datasets/GreatBird/ViTP/files"><img src="https://img.shields.io/badge/ModelScope-Data-624aff"></a>
 </p>
 
-<h5 align="center"><em>Yuxuan Li, Yicheng Zhang, Wenhao Tang, Yimian Dai, Ming-Ming Cheng, Xiang Li, and Jiang Yang </em></h5>
+<h5 align="center"><em>Yuxuan Li, Yicheng Zhang, Wenhao Tang, Yimian Dai, Ming-Ming Cheng, Xiang Li, and Jian Yang </em></h5>
 
 
 ## This repository is the official implementation of ["Visual Instruction Pretraining for Domain-Specific Foundation Models"](ViTP.pdf).
