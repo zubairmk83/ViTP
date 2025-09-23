@@ -46,7 +46,7 @@ img_ratios = [
     1.25,
 ]
 launcher = 'pytorch'
-load_from = './work_dirs/upernet_internvit_adp_levir_cos/iter_80000.pth'
+load_from = './work_dirs/vitp_levir_upernet/iter_80000.pth'
 log_level = 'INFO'
 log_processor = dict(by_epoch=False)
 model = dict(

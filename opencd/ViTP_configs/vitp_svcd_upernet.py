@@ -66,7 +66,7 @@ img_ratios = [
     1.25,
 ]
 launcher = 'pytorch'
-load_from = './work_dirs/unet_internvit_adp_svcd_7/iter_120000.pth'
+load_from = './work_dirs/vitp_svcd_upernet/iter_120000.pth'
 log_level = 'INFO'
 log_processor = dict(by_epoch=False)
 model = dict(
